@@ -12,7 +12,8 @@
     "babel-loader": "^8.1.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
-    "webpack-node-externals": "^2.5.2"
+    "webpack-node-externals": "^2.5.2",
+    "nodemon": "2.0.2"
   },
   "scripts": {
     "development": "nodemon"
