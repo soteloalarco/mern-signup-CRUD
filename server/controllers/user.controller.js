@@ -1,6 +1,6 @@
 import User from '../models/user.model'
 import extend from 'lodash/extend'
-import errorHandler from './error.controller'
+import errorHandler from './../helpers/dbErrorHandler'
 
 
 const create = async (req, res) => {
@@ -16,18 +16,6 @@ const create = async (req, res) => {
       })
     }
 }
-
-
-const list = async (req, res) => {
-    try {
-      let users = await User.find().select('name email updated created')
-      res.json(users)
-    } catch (err) {
-      return res.status(400).json({
-        error: errorHandler.getErrorMessage(err)
-      })
-    }
-  }
 
 
 const userByID = async (req, res, next, id) => {
@@ -52,6 +40,16 @@ const read = (req, res) => {
     return res.json(req.profile)
 }
 
+const list = async (req, res) => {
+  try {
+    let users = await User.find().select('name email updated created')
+    res.json(users)
+  } catch (err) {
+    return res.status(400).json({
+      error: errorHandler.getErrorMessage(err)
+    })
+  }
+}
 
 const update = async (req, res) => {
     try {
