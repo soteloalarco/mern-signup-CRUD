@@ -8,7 +8,7 @@ export default () => {
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
           </head>
           <body>
-            <div id="root"></div>
+            <div id="root">Hello World</div>
             <script type="text/javascript" src="/dist/bundle.js"></script>
           </body>
       </html>`

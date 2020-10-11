@@ -9,6 +9,7 @@ import Template from './../template'
 import userRoutes from './routes/user.routes'
 import authRoutes from './routes/auth.routes'
 
+
 // comment out when not in development mode
 import devBundle from './devBundle'
 
