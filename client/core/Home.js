@@ -29,7 +29,6 @@ export default function Home(){
             Home Page
             </Typography>
             <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
-            <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo by <a href="https://unsplash.com/@boudewijn_huysmans" target="_blank" rel="noopener noreferrer">Boudewijn Huysmans</a> on Unsplash</Typography>
             <CardContent>
               <Typography variant="body2" component="p">
                   Welcome to the MERN Skeleton home page.
