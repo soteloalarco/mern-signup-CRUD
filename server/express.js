@@ -62,7 +62,6 @@ app.get('*', (req, res) => {
       css: css
    }))
 
-   
 })
 
 app.use((err, req, res, next) => {
