@@ -31,7 +31,7 @@ export default function Home(){
             <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
             <CardContent>
               <Typography variant="body2" component="p">
-                  Welcome to the MERN Skeleton home page.
+                  Welcome to the MERN Skeleton home page. 
               </Typography>
             </CardContent>
         </Card>
